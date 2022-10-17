@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--color1);
+  background: var(--bg-color1);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  user-select: none;
+}
+#root {
+  background: rgba(0, 0, 0, 0.7);
+}
+:root {
+  --bg-color0: gray;
+  --bg-color1: gray;
+}
+@media only screen and (max-width: 968px) {
+  html {
+      overflow-y: hidden;
+  }
+}
+.App {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+@media only screen and (max-width: 968px) {
+  .App,
+  .homepage {
+    display: unset;
+    overflow: hidden;
+  }
+}
